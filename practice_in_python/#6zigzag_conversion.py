@@ -1,19 +1,21 @@
 class Solution:
     # @return a string
     def convert(self, s, nRows):
-    	queues = [[] for row in range(nRows)]
-    	level = 0
-    	step = 1
-    	for w in s:
-    		queues[level].append(w)
-    		print("letter:"+w+",level:",level,",step:",step)
-    		level+=step
-    		if level == 0 or level == nRows-1:
-    			step = -step
-    	for i in range(nRows):
-    		print(''.join(queues[i]))
+    	if nRows == 1: 
+            return s
+        queues = ["" for row in range(nRows)]
+        step = 1
+        level = 0
+        for w in s:
+            queues[level]+=w
+            if level == 0:
+                step = 1
+            if level == nRows-1:
+                step = -1
+            level += step
+        print("".join(queues))
 
-s = "PAYPALISHIRING"
-nRows = 3
+s = "A"
+nRows = 2
 sol = Solution()
 sol.convert(s,nRows)
