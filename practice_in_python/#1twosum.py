@@ -1,9 +1,9 @@
 class Solution:
     # binarySearch return the index of the target if find, if not , return -1
     def binarySearch(self, a, s, e, target):
-        print(s,e,target)
+        print(s, e, target)
         if s > e:
-                return -1
+            return -1
         r = (s+e) /2
         if a[r] == target:
             return r

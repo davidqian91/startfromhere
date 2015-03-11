@@ -1,0 +1,33 @@
+array find median
+
+start end
+start + (end-start)/2   // incase that end + start overflow as an integer
+
+substring
+time complexity: O(n)
+java implementation: string char array.
+
+c++ string mutatblem while java string is immutatble
+java mutable string implementation:
+stringbuffer : synchronize
+stringbuilder
+
+c++:
+set --> bst implementation, (log n) time to find an element
+unordered set --> like hash set, dict, O(1) find an element
+
+hash set:
+
+open addressing:
+hash bucket contains one element only.
+if colision, find another bucket.
+
+close addressing:
+bucket as a linked list or bst, if colision, append in the bucket.
+If proportion of length of the linked array to the total size of the hashset is too high, then rehashing.
+
+rehashing:
+double size, re calculate every element's position
+
+hashcode = hash(key)
+position = hash(key) mod size
