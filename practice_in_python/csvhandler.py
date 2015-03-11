@@ -1,7 +1,7 @@
 ## csv hanlder
 ## find date type in format ##/##/##
 ## replace single digit # with 0#
-## takes filename of the file to modify as command line parameter
+## takes filename as a command line parameter
 import csv
 import sys
 import re
@@ -20,10 +20,10 @@ writer = csv.writer(file2write)
 with open(filename, 'rb') as f:
     reader = csv.reader(f)
     for row in reader:
-        print(row)
+        #print(row)
         for i in range(len(row)):
             if re.search('^\d+/\d+/\d+$', row[i]):
                 m = re.sub('\d{1,2}', myReplace, row[i])
                 row[i] = m
-        print(row)
+        #print(row)
         writer.writerow(row)
