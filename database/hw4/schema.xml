@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<movie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="movie.xsd">
+    <record>
+       <Movie_ID>M1</Movie_ID>
+       <Title>The Shawshank Redemption</Title>
+       <Director>Frank Darabont</Director>
+       <Writer>Stephen King, Frank Darabont</Writer>
+       <Genre>Crime Drama</Genre>
+       <Release_Date>1994-10-14</Release_Date>
+       <Runtime>142</Runtime>
+    </record>
+</movie>
