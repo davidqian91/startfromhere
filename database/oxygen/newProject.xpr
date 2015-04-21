@@ -2,7 +2,23 @@
 <project version="16.1">
     <meta>
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
-        <options/>
+        <options>
+            <serialized version="16.1" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array/>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
     </meta>
-    <projectTree name="newProject.xpr"/>
+    <projectTree name="newProject.xpr">
+        <file name="../hw4/movie.xml"/>
+        <file name="../hw4/movie.xsd"/>
+        <file name="../hw4/review.xml"/>
+        <file name="../hw4/review.xsd"/>
+        <file name="../hw4/reviewer.xml"/>
+        <file name="../hw4/reviewer.xsd"/>
+    </projectTree>
 </project>

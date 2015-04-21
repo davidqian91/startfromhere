@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		CE173D541AE0487E0085E7AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE173D531AE0487E0085E7AA /* AppDelegate.swift */; };
 		CE173D561AE0487E0085E7AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE173D551AE0487E0085E7AA /* ViewController.swift */; };
-		CE173D591AE0487E0085E7AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE173D571AE0487E0085E7AA /* Main.storyboard */; };
 		CE173D5B1AE0487E0085E7AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE173D5A1AE0487E0085E7AA /* Images.xcassets */; };
 		CE173D5E1AE0487E0085E7AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE173D5C1AE0487E0085E7AA /* LaunchScreen.xib */; };
 		CE173D6A1AE0487F0085E7AA /* firstAttemptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE173D691AE0487F0085E7AA /* firstAttemptTests.swift */; };
+		CE173D751AE0582D0085E7AA /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE173D741AE0582D0085E7AA /* resultViewController.swift */; };
+		CE173DAD1AE1E0AC0085E7AA /* CellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE173DAC1AE1E0AC0085E7AA /* CellContent.swift */; };
+		CE173DAF1AE355990085E7AA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE173DAE1AE355990085E7AA /* DetailViewController.swift */; };
+		CE5BA9DC1AE4DEDD0072139E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5BA9D91AE4DEDD0072139E /* FBSDKCoreKit.framework */; };
+		CE5BA9DD1AE4DEDD0072139E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5BA9DA1AE4DEDD0072139E /* FBSDKLoginKit.framework */; };
+		CE5BA9DE1AE4DEDD0072139E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5BA9DB1AE4DEDD0072139E /* FBSDKShareKit.framework */; };
+		CE5BA9E21AE5A37C0072139E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5BA9E01AE5A37C0072139E /* Main.storyboard */; };
+		CE5BA9E61AE5AA0C0072139E /* BridgingHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5BA9E31AE5A63E0072139E /* BridgingHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +37,19 @@
 		CE173D521AE0487E0085E7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE173D531AE0487E0085E7AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE173D551AE0487E0085E7AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE173D581AE0487E0085E7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE173D5A1AE0487E0085E7AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE173D5D1AE0487E0085E7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CE173D631AE0487F0085E7AA /* firstAttemptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstAttemptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE173D681AE0487F0085E7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE173D691AE0487F0085E7AA /* firstAttemptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstAttemptTests.swift; sourceTree = "<group>"; };
+		CE173D741AE0582D0085E7AA /* resultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
+		CE173DAC1AE1E0AC0085E7AA /* CellContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellContent.swift; path = ../CellContent.swift; sourceTree = "<group>"; };
+		CE173DAE1AE355990085E7AA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE5BA9D91AE4DEDD0072139E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		CE5BA9DA1AE4DEDD0072139E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CE5BA9DB1AE4DEDD0072139E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		CE5BA9E11AE5A37C0072139E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE5BA9E31AE5A63E0072139E /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5BA9DD1AE4DEDD0072139E /* FBSDKLoginKit.framework in Frameworks */,
+				CE5BA9DC1AE4DEDD0072139E /* FBSDKCoreKit.framework in Frameworks */,
+				CE5BA9DE1AE4DEDD0072139E /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +76,9 @@
 		CE173D451AE0487E0085E7AA = {
 			isa = PBXGroup;
 			children = (
+				CE5BA9D91AE4DEDD0072139E /* FBSDKCoreKit.framework */,
+				CE5BA9DA1AE4DEDD0072139E /* FBSDKLoginKit.framework */,
+				CE5BA9DB1AE4DEDD0072139E /* FBSDKShareKit.framework */,
 				CE173D501AE0487E0085E7AA /* firstAttempt */,
 				CE173D661AE0487F0085E7AA /* firstAttemptTests */,
 				CE173D4F1AE0487E0085E7AA /* Products */,
@@ -77,9 +97,13 @@
 		CE173D501AE0487E0085E7AA /* firstAttempt */ = {
 			isa = PBXGroup;
 			children = (
+				CE5BA9E01AE5A37C0072139E /* Main.storyboard */,
 				CE173D531AE0487E0085E7AA /* AppDelegate.swift */,
 				CE173D551AE0487E0085E7AA /* ViewController.swift */,
-				CE173D571AE0487E0085E7AA /* Main.storyboard */,
+				CE173D741AE0582D0085E7AA /* resultViewController.swift */,
+				CE173DAE1AE355990085E7AA /* DetailViewController.swift */,
+				CE173DAC1AE1E0AC0085E7AA /* CellContent.swift */,
+				CE5BA9E31AE5A63E0072139E /* BridgingHeader.h */,
 				CE173D5A1AE0487E0085E7AA /* Images.xcassets */,
 				CE173D5C1AE0487E0085E7AA /* LaunchScreen.xib */,
 				CE173D511AE0487E0085E7AA /* Supporting Files */,
@@ -114,6 +138,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		CE5BA9E51AE5AA010072139E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5BA9E61AE5AA0C0072139E /* BridgingHeader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		CE173D4D1AE0487E0085E7AA /* firstAttempt */ = {
 			isa = PBXNativeTarget;
@@ -122,6 +157,7 @@
 				CE173D4A1AE0487E0085E7AA /* Sources */,
 				CE173D4B1AE0487E0085E7AA /* Frameworks */,
 				CE173D4C1AE0487E0085E7AA /* Resources */,
+				CE5BA9E51AE5AA010072139E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -192,9 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE173D591AE0487E0085E7AA /* Main.storyboard in Resources */,
 				CE173D5E1AE0487E0085E7AA /* LaunchScreen.xib in Resources */,
 				CE173D5B1AE0487E0085E7AA /* Images.xcassets in Resources */,
+				CE5BA9E21AE5A37C0072139E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE173D751AE0582D0085E7AA /* resultViewController.swift in Sources */,
 				CE173D561AE0487E0085E7AA /* ViewController.swift in Sources */,
 				CE173D541AE0487E0085E7AA /* AppDelegate.swift in Sources */,
+				CE173DAD1AE1E0AC0085E7AA /* CellContent.swift in Sources */,
+				CE173DAF1AE355990085E7AA /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,20 +275,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE173D571AE0487E0085E7AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE173D581AE0487E0085E7AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE173D5C1AE0487E0085E7AA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CE173D5D1AE0487E0085E7AA /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CE5BA9E01AE5A37C0072139E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5BA9E11AE5A37C0072139E /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,9 +375,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/user/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = firstAttempt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = firstAttempt/BridgingHeader.h;
 			};
 			name = Debug;
 		};
@@ -346,9 +393,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/user/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = firstAttempt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = firstAttempt/BridgingHeader.h;
 			};
 			name = Release;
 		};
@@ -405,6 +460,7 @@
 				CE173D6F1AE0487F0085E7AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE173D701AE0487F0085E7AA /* Build configuration list for PBXNativeTarget "firstAttemptTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +469,7 @@
 				CE173D721AE0487F0085E7AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

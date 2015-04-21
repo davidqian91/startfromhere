@@ -9,5 +9,5 @@
 #ifndef firstAttempt_Bridging_Header_h
 #define firstAttempt_Bridging_Header_h
 
-
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #endif

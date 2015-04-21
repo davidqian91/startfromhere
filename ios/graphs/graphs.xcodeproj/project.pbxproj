@@ -13,6 +13,8 @@
 		CE173CF71ADF9BEC0085E7AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE173CF61ADF9BEC0085E7AA /* Images.xcassets */; };
 		CE173CFA1ADF9BEC0085E7AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE173CF81ADF9BEC0085E7AA /* LaunchScreen.xib */; };
 		CE173D061ADF9BEC0085E7AA /* graphsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE173D051ADF9BEC0085E7AA /* graphsTests.swift */; };
+		CE173D121ADF9CE70085E7AA /* drawexample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE173D111ADF9CE70085E7AA /* drawexample.swift */; };
+		CE173D141AE0383F0085E7AA /* drawexp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE173D131AE0383F0085E7AA /* drawexp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		CE173CFF1ADF9BEC0085E7AA /* graphsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = graphsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE173D041ADF9BEC0085E7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE173D051ADF9BEC0085E7AA /* graphsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graphsTests.swift; sourceTree = "<group>"; };
+		CE173D111ADF9CE70085E7AA /* drawexample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawexample.swift; sourceTree = "<group>"; };
+		CE173D131AE0383F0085E7AA /* drawexp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawexp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				CE173CF61ADF9BEC0085E7AA /* Images.xcassets */,
 				CE173CF81ADF9BEC0085E7AA /* LaunchScreen.xib */,
 				CE173CED1ADF9BEC0085E7AA /* Supporting Files */,
+				CE173D111ADF9CE70085E7AA /* drawexample.swift */,
+				CE173D131AE0383F0085E7AA /* drawexp.swift */,
 			);
 			path = graphs;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 			files = (
 				CE173CF21ADF9BEC0085E7AA /* ViewController.swift in Sources */,
 				CE173CF01ADF9BEC0085E7AA /* AppDelegate.swift in Sources */,
+				CE173D121ADF9CE70085E7AA /* drawexample.swift in Sources */,
+				CE173D141AE0383F0085E7AA /* drawexp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +345,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = graphs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -347,8 +357,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = graphs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
