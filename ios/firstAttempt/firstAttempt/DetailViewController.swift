@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, UITableViewDataSource {
+class DetailViewController: UIViewController, UITableViewDataSource, FBSDKSharingDelegate{
     
     let labelTitles = [["CategoryName","Condition","Buying Format"],
         ["User Name", "Feedback Score", "Positive Feedback", "Feedback Rating", "Top Rated","Store"],
@@ -238,11 +238,7 @@ class DetailViewController: UIViewController, UITableViewDataSource {
             content.contentTitle = basicInfo["title"] as String
             content.contentDescription = self.shareDescription
             content.imageURL = NSURL(string: basicInfo["galleryURL"] as String)
-//            let button : FBSDKShareButton = FBSDKShareButton()
-//            button.shareContent = content
-//            button.frame = CGRectMake((UIScreen.mainScreen().bounds.width - 100) * 0.5, 50, 100, 25)
-//            self.view.addSubview(button)
-            FBSDKShareDialog.showFromViewController(self, withContent: content, delegate: nil)
+            FBSDKShareDialog.showFromViewController(self, withContent: content, delegate: self)
         }
         else{
             self.fbLoginManager.logInWithPublishPermissions(["publish_actions"], handler: { (result: FBSDKLoginManagerLoginResult!, error: NSError!) -> Void in
@@ -268,5 +264,30 @@ class DetailViewController: UIViewController, UITableViewDataSource {
         //            loginView.delegate = self
         //        }
         
+    }
+    
+    func sharer(sharer: FBSDKSharing!, didCompleteWithResults results: [NSObject : AnyObject]!) {
+        let res:NSDictionary = results as NSDictionary
+        if res.count == 0{
+            println("cancel")
+            var alert = UIAlertController(title: "Facebook Sharing Result", message: "User Cancelled", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        else{
+            let postId:String = res.valueForKey("postId") as String
+            println("success, postId: \(postId)")
+            var alert = UIAlertController(title: "Facebook Sharing Result", message: "Success\nPostId: \(postId)", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func sharer(sharer: FBSDKSharing!, didFailWithError error: NSError!) {
+        println("error")
+    }
+    
+    func sharerDidCancel(sharer: FBSDKSharing!) {
+        println("cancel")
     }
 }

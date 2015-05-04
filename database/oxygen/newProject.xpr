@@ -14,6 +14,7 @@
         </options>
     </meta>
     <projectTree name="newProject.xpr">
+        <file name="../hw4/%235.xquery"/>
         <file name="../hw4/movie.xml"/>
         <file name="../hw4/movie.xsd"/>
         <file name="../hw4/review.xml"/>

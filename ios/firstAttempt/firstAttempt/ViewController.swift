@@ -71,11 +71,45 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     }
     
     func inputValidation() -> Bool {
+        errorMsg.text = ""
+        var status:Bool = true
+        var str:String = ""
+        var minp:Int!
+        var maxp:Int!
+        var line:Int = 0
         if keyword.text == ""{
-            errorMsg.text = "Please enter a keyword"
-            return false
+            str += "Please enter a keyword\n"
+            status = false
+            ++line
         }
-        return true
+        if (minprice.text != ""){
+            minp = minprice.text.toInt()
+            if (minp == nil){
+                str += "Min price should be a valid number\n"
+                status = false
+                ++line
+            }
+        }
+        if (maxPrice.text != ""){
+            maxp = maxPrice.text.toInt()
+            if (maxp == nil){
+                str += "Max price should be a valid number\n"
+                status = false
+                ++line
+            }
+            else if (minp != nil){
+                if (minp > maxp){
+                    str += "Min Price should be less than max price"
+                    status = false
+                    ++line
+                }
+            }
+        }
+        errorMsg.text = str
+        errorMsg.font = errorMsg.font.fontWithSize(13)
+        errorMsg.sizeToFit()
+        errorMsg.numberOfLines = line+1 
+        return status
     }
     
     @IBAction func sortByBtn(sender: UIButton) {
